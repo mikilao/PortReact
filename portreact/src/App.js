@@ -16,9 +16,10 @@ function App() {
     <Switch>
       <Route component={Home} path="/" exact></Route>
       <Route component={About} path="/about"></Route>
+      <Route component={Singlepost} path="/post/:slug"></Route>
       <Route component={Post} path="/post"></Route>
       <Route component={Project} path="/project"></Route>
-      <Route component={Singlepost} path="/post/:slug"></Route>
+      
     </Switch>
     </BrowserRouter>
   );
