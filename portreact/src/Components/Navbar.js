@@ -30,10 +30,10 @@ export default function NavBar() {
                  </NavLink>
 
                 </nav>
-                <div>
+                <div className="my-6 py-3 px-3">
                     <SocialIcon url="https://twitter.com/DASHtagOrlando" className=" mr-4" target="blank" fgColor="#fff" style={{height: 35, width: 35}} />
                     <SocialIcon url="https://www.facebook.com/systemley" className=" mr-4" target="blank" fgColor="#fff" style={{height: 35, width: 35}} />
-                    <SocialIcon url="https://github.com/mikilao" className=" my-2 mr-4" target="blank" fgColor="#fff" style={{height: 35, width: 35}} />
+                    <SocialIcon url="https://github.com/mikilao" className="mr-4" target="blank" fgColor="#fff" style={{height: 35, width: 35}} />
                 </div>
             </div>
         </header>
