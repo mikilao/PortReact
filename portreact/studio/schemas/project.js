@@ -9,14 +9,14 @@ export default {
         },
         {
             name:"date",
-            tyoe: "datetime",
+            type: "datetime",
         },{
             name: "place",
-            type: "string"
+            type: "string",
         },
         { 
             name: "description",
-            type: "text"
+            type: "text",
         },
         {
             name: "projectType",
@@ -27,16 +27,20 @@ export default {
                     {value: "personal", title:"Personal"},
                     {value: "client", title:"Client"},
                     {value: "bootcamp", title:"Bootcamp"},
-                ]
-            }
+                ],
+            },
         },
         {
             name: "link",
-            type: "url"
+            type: "url",
         },
         {
             name: "tags",
-            type: "array"
-        }
-    ]
-}
+            type: "array",
+            of:[{type: 'string'}],
+            options:{
+                layout: 'tags',
+            },
+        },
+    ],
+};
