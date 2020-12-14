@@ -1,7 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import sanityClient from '../Client';
+import sunsetselfie from '../sunsetselfie.jpg';
+import imageUrlBuilder from "@sanity/image-url";
+import BlockContent from '@sanity/block-content-to-react';
+import typewriter from "../typewriter.jpg";
 
-export default function About(){
-    return(
-        <h1>About!!!</h1>
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+    return builder.image(source)
+}
+
+export default function About() {
+    const [author, setAuthor] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == 'author']{
+    name,
+    bio,
+    'authorImage':image.asset->url
+  }`
+      )
+      .then((data) => setAuthor(data[0]))
+      .catch((error) => console.log(error));
+  }, []);
+
+  if (!author) return <div>Loading...</div>;
+    return (
+        <main className="relative">
+            <img src={typewriter} alt="typewriter" className='absolute w-full' />
+         
+      <div className='relative container mx-auto p-10 lg:pt-48'>
+        <section className='bg-purple-800 opacity-90 rounded-lg shadow-2xl lg:flex p-20'>
+                    <img src={urlFor(author.authorImage).url()} alt={author.name} className="rounded w-28 h-32 lg:w-48 h-64 mr-8" />
+                    <div className="text-lg flex flex-col justify-center">
+                        <h1 className="cursive text-4xl text purple-300 mb-4"> Hi there I'm {" "}
+                            <span className="text-purple-200"> {author.name}</span></h1>
+                        <div className="prose lg:prose-xl text-white">
+                            <BlockContent blocks={author.bio} projectId="z6srao49" dataset="production" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
     )
 } 
