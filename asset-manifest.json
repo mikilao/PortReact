@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portreact/static/css/main.19ce060f.chunk.css",
+    "main.js": "/portreact/static/js/main.58aff7ab.chunk.js",
+    "main.js.map": "/portreact/static/js/main.58aff7ab.chunk.js.map",
+    "runtime-main.js": "/portreact/static/js/runtime-main.c4ee5bd8.js",
+    "runtime-main.js.map": "/portreact/static/js/runtime-main.c4ee5bd8.js.map",
+    "static/css/2.637f5471.chunk.css": "/portreact/static/css/2.637f5471.chunk.css",
+    "static/js/2.a804b161.chunk.js": "/portreact/static/js/2.a804b161.chunk.js",
+    "static/js/2.a804b161.chunk.js.map": "/portreact/static/js/2.a804b161.chunk.js.map",
+    "static/js/3.134c8e0d.chunk.js": "/portreact/static/js/3.134c8e0d.chunk.js",
+    "static/js/3.134c8e0d.chunk.js.map": "/portreact/static/js/3.134c8e0d.chunk.js.map",
+    "index.html": "/portreact/index.html",
+    "static/css/2.637f5471.chunk.css.map": "/portreact/static/css/2.637f5471.chunk.css.map",
+    "static/css/main.19ce060f.chunk.css.map": "/portreact/static/css/main.19ce060f.chunk.css.map",
+    "static/js/2.a804b161.chunk.js.LICENSE.txt": "/portreact/static/js/2.a804b161.chunk.js.LICENSE.txt",
+    "static/media/sunset.dfe57122.JPG": "/portreact/static/media/sunset.dfe57122.JPG",
+    "static/media/sunsetselfie.9e07c32e.jpg": "/portreact/static/media/sunsetselfie.9e07c32e.jpg",
+    "static/media/typewriter.ee0d02f3.jpg": "/portreact/static/media/typewriter.ee0d02f3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4ee5bd8.js",
+    "static/css/2.637f5471.chunk.css",
+    "static/js/2.a804b161.chunk.js",
+    "static/css/main.19ce060f.chunk.css",
+    "static/js/main.58aff7ab.chunk.js"
+  ]
+}
