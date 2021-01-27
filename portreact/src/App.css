@@ -1,3 +1,5 @@
+@import url('http://cdn-images.mailchimp.com/embedcode/slim-10_7.css');
+
 .App {
   text-align: center;
 }
@@ -36,3 +38,30 @@
     transform: rotate(360deg);
   }
 }
+.title{
+  font-family: 'Architects Daughter', cursive;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   color: white;
+}
+
+
+#mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif;
+ }
+ .field{
+  position: absolute; left: -5000px;
+ }
+ .response{
+  display:none
+ }
+ .something{
+  position: absolute; left: -5000px;
+ }
+
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */

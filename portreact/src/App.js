@@ -7,6 +7,8 @@ import Post from "./Components/Post";
 import Project from './Components/Project';
 import Singlepost from './Components/Singlepost';
 import NavBar from "./Components/Navbar";
+import FooterPage from "./Components/Footer";
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
       <Route component={Project} path="/project"></Route>
       
     </Switch>
+    <FooterPage />
     </BrowserRouter>
   );
 }
