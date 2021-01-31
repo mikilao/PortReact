@@ -2,7 +2,7 @@ import React from "react";
 import { MDBCol } from "mdbreact";
 import '../App.css';
 import { SocialIcon } from 'react-social-icons';
-
+import {Mailchimp} from 'mailchimp';
 
 
 const FooterPage = () => {
@@ -39,36 +39,23 @@ const FooterPage = () => {
 
                         </MDBCol>
                     </div>
-                    <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
-                        <h3 class="text-3xl py-4 cursive">Email me</h3>
-
-                        <div id="mc_embed_signup">
-                            <form action="https://systemley.us7.list-manage.com/subscribe/post?u=687867956a52e7aa90494d2d0&amp;id=6e59f97980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                    <label for="mce-EMAIL">Contact Me</label>
-                                    <input 
-                                    type="email" 
-                                    value="" 
-                                    name="EMAIL" 
-                                    class="email"
-                                     id="mce-EMAIL"
-                                     placeholder="email address" required>
-                                    </input>
-
-                                    <div className="field" aria-hidden="true">
-                                        <input 
-                                        type="text"
-                                         name="b_687867956a52e7aa90494d2d0_6e59f97980"
-                                          tabindex="-1" value="">
-                                             </input>
-                                             </div>
-                                    <div class="clear">
-                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" >
-                                            </input>
-                                        </div>
-                                    </div>
-                                
-                            </form>
+                    <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <h3 className="text-3xl py-4 cursive">Email me</h3>
+                        
+                        
+                        <div id="mc_embed_signup" className="relative container mx-auto bg-purple-800 opacity-90 rounded-lg shadow-2xl lg:flex p-20">
+                            Subscribe
+                            <Mailchimp 
+         action="https://systemley.us7.list-manage.com/subscribe/post?u=687867956a52e7aa90494d2d0&amp;id=6e59f97980"
+        fields={[
+          {
+            name: 'EMAIL',
+            placeholder: 'Email',
+            type: 'email',
+            required: true
+          }
+        ]}
+        />
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ import Project from './Components/Project';
 import Singlepost from './Components/Singlepost';
 import NavBar from "./Components/Navbar";
 import FooterPage from "./Components/Footer";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 
 
@@ -24,6 +25,8 @@ function App() {
       
     </Switch>
     <FooterPage />
+    Subscribe
+<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
     </BrowserRouter>
   );
 }
