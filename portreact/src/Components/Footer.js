@@ -2,7 +2,7 @@ import React from "react";
 import { MDBCol } from "mdbreact";
 import '../App.css';
 import { SocialIcon } from 'react-social-icons';
-import {Mailchimp} from 'mailchimp';
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 
 const FooterPage = () => {
@@ -44,8 +44,8 @@ const FooterPage = () => {
                         
                         
                         <div id="mc_embed_signup" className="relative container mx-auto bg-purple-800 opacity-90 rounded-lg shadow-2xl lg:flex p-20">
-                            Subscribe
-                            <Mailchimp 
+                            Subscribe!
+                            <MailchimpSubscribe
          action="https://systemley.us7.list-manage.com/subscribe/post?u=687867956a52e7aa90494d2d0&amp;id=6e59f97980"
         fields={[
           {
