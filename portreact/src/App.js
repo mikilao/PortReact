@@ -15,6 +15,7 @@ import SubscribePage from "./Components/Subscribe";
 
 function App() {
   return (
+    <div>
     <BrowserRouter>
     <NavBar />
     <Switch>
@@ -26,11 +27,14 @@ function App() {
       
     </Switch>
     
-    <FooterPage />
+   
     
-<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
-    </BrowserRouter>
+
+    </BrowserRouter> 
+    <FooterPage />
+    </div>
   );
 }
 
 export default App;
+//<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
