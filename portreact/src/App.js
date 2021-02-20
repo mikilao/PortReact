@@ -26,12 +26,8 @@ function App() {
       <Route component={Project} path="/project"></Route>
       
     </Switch>
-    
-   
-    
-
     </BrowserRouter> 
-    <FooterPage />
+
     </div>
   );
 }

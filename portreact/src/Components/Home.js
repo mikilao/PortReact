@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../sunset.JPG';
+import FooterPage from './Footer';
 
 export default function Home(){
     return(
@@ -8,7 +9,7 @@ export default function Home(){
         <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
             <h1 className="text-6xl text-yellow-300 text-center font-bold cursive leading-none lg:leading-snug home-name">Welcome to Rachel, Nice to meet you! </h1>
         </section>
-        
+        <FooterPage />
         </main>
     )
 } 
